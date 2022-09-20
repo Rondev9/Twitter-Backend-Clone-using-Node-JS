@@ -1,0 +1,31 @@
+POST http://localhost:3690/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+
+POST http://localhost:3690/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###
+GET http://localhost:3690/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjYzNjQ5NTMyfQ.Ln66zDFuL02-rX2l4-Y937p8IK1ynpjiYCgcEUbKalQ
+
+###
+GET http://localhost:3690/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjYzNjQ5NTMyfQ.Ln66zDFuL02-rX2l4-Y937p8IK1ynpjiYCgcEUbKalQ
+
+###
+GET http://localhost:3690/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjYzNjQ5NTMyfQ.Ln66zDFuL02-rX2l4-Y937p8IK1ynpjiYCgcEUbKalQ
